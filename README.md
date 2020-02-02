@@ -1,4 +1,4 @@
-# Start-gulp-simple
+# Mikocin
 Start template with (optional)
 - bootstrap-reboot.min.css
 - bootstrap-grid.min.css
