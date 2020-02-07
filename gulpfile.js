@@ -40,8 +40,16 @@ function dist () {
 	.pipe(browserSync.stream());
 }
 
+function imageMin (done) {
+	src('app/img/*')
+	.pipe(imagemin())
+	.pipe(dest('app/img'));
+	done();
+}
+
 exports.default = series(styles, serve);
 exports.dist = series(dist, serve);
+exports.img = series(imageMin);
 
 
 		
